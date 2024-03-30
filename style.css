@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgrey;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.centered {
+  margin-top: 10em;
+}
+.input_container {
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 13px;
+  background-color: #fff;
+  min-height: 101px;
+  position: relative;
+}
+
+.input_container .items {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  margin: 18px 18px 18px 18px;
+}
+
+.input_container .items_of_input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding: 18px 18px 18px 18px; */
+}
+
+.input_inside {
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 13px;
+  border: none;
+  padding: 21px 16px 21px 16px;
+  width: 100%;
+  background-color: #f5f5f5;
+  transition: 0.2s ease all;
+  resize: none;
+  text-indent: 0px;
+}
+.input_inside:focus {
+  border: 1.3px solid #00afff;
+  outline: none;
+  background: transparent;
+}
+.input_inside:hover {
+  border: 0.8px solid #aaaaaa;
+  outline: none;
+}
+
+.input_container .label {
+  color: #999;
+  font-size: 17px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 33px;
+  top: 37px;
+  transition: 0.2s ease;
+  display: flex;
+}
+.input_inside:focus ~ .label {
+  transform: translateY(-14px);
+  font-size: 14px;
+  transition: 0.2 ease;
+}
+
+.input_container .button {
+  background-color: #002a3a;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 13px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  height: 100%;
+}
+.input_container .button:hover {
+  background-color: #171d23;
+}
+
+@media screen and (max-width: 810px) {
+  .input_container {
+    min-height: 180px;
+  }
+  .input_container .items {
+    flex-direction: column;
+  }
+  .input_container .button {
+    width: 100%;
+  }
+}
