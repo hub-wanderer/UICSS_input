@@ -87,11 +87,20 @@ body {
   transition: 0.2s ease;
   height: 100%;
 }
-.input_container i {
+.input_container .button_adaptive {
   display: none;
   color: #aaaaaa;
-  font-size: 25px;
+  font-size: 21px;
   cursor: pointer;
+  background-color: #002a3a;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 13px;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  height: 100%;
 }
 .input_container .button:hover {
   background-color: #171d23;
@@ -107,7 +116,7 @@ body {
   .input_container .button {
     display: none;
   }
-  .input_container i {
+  .input_container .button_adaptive {
     display: inline-block;
   }
 }
