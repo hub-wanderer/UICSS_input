@@ -70,7 +70,8 @@ body {
   transition: 0.2s ease;
   display: flex;
 }
-.input_inside:focus ~ .label {
+.input_inside:focus ~ .label,
+.input_inside:valid ~ .label {
   transform: translateY(-14px);
   font-size: 14px;
   transition: 0.2 ease;
