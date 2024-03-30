@@ -92,12 +92,12 @@ body {
 
 @media screen and (max-width: 810px) {
   .input_container {
-    min-height: 180px;
+    /* min-height: 180px; */
   }
-  .input_container .items {
+  /* .input_container .items {
     flex-direction: column;
   }
   .input_container .button {
     width: 100%;
-  }
+  } */
 }
