@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/36862cf06b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -15,7 +16,13 @@
       <form class="input_container">
         <div class="items">
           <div class="items_of_input">
-            <input required maxlength="9" type="text" class="input_inside" />
+            <input
+              required
+              data-type="currency"
+              maxlength="9"
+              type="text"
+              class="input_inside"
+            />
             <label class="label" for="">Введите сумму займа </label>
           </div>
           <button class="button">Показать <span>261</span></button>
@@ -26,5 +33,20 @@
         </div>
       </form>
     </section>
+
+    <script src="/scripts/currency.js"></script>
+
+    <script>
+      const button = document.querySelector("button");
+      const button_adaptive = document.querySelector("button_adaptive");
+
+      function preventingD(variable) {
+        variable.addEventListener("click", function (e) {
+          e.preventDefault();
+        });
+      }
+      preventingD(button);
+      preventingD(button_adaptive);
+    </script>
   </body>
 </html>
