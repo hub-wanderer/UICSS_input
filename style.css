@@ -25,6 +25,7 @@ body {
 .input_container .items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 13px;
   margin: 18px 18px 18px 18px;
 }
@@ -86,18 +87,27 @@ body {
   transition: 0.2s ease;
   height: 100%;
 }
+.input_container i {
+  display: none;
+  color: #aaaaaa;
+  font-size: 25px;
+  cursor: pointer;
+}
 .input_container .button:hover {
   background-color: #171d23;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 610px) {
   .input_container {
     /* min-height: 180px; */
   }
-  /* .input_container .items {
-    flex-direction: column;
+  .input_container .items {
+    /* flex-direction: column; */
   }
   .input_container .button {
-    width: 100%;
-  } */
+    display: none;
+  }
+  .input_container i {
+    display: inline-block;
+  }
 }
